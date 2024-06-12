@@ -1,0 +1,44 @@
+/* .header{
+    background-image:  url('../assets/background-graph.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+.ticket{
+    transition: all 0.3s ease-out;
+}
+.ticket:hover{
+    transform: scale(1.1);
+}
+.ticketcard{
+    transition: all 0.3s ease-in;
+}
+.ticket:hover .ticketcard{
+    background-color: black;
+    color: wheat;
+}
+
+.ticketcard::before{
+    content: '';
+    /* z-index: 15px; */
+    background-color: rgb(245 232 183);
+    width: 30px;
+    height: 30px;
+    /* padding: 5px; */
+    border-radius: 50px;
+    margin-left:195px;
+    margin-top: -22px;
+    position: absolute;
+}
+.ticketcard::after{
+    content: '';
+    /* z-index: 15px; */
+    background-color: rgb(245 232 183);
+    width: 30px;
+    height: 30px;
+    /* padding: 5px; */
+    border-radius: 50px;
+    margin-left: 195px;
+    margin-top: 73px;
+    position: absolute;
+}

@@ -7,16 +7,42 @@
 
     <!-- custom css file  -->
      <link rel="stylesheet" href="./css/default.css">
-
+     <link rel="stylesheet" href="./css/style.css">
     <!-- tailwind cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-accent">
-        <!-- <h1 class="text-4xl text-clifford">Something</h1> -->
+    <header class="bg-accent h-[100vh] w-full relative header">
+        <div class="w-full h-full flex items-end justify-center">
+            <img class="w-[1100px] z-10" src="./assets/3d-cartoon-character.png" alt="">
+        </div>
+        <h1 class="absolute uppercase top-[28%] w-full text-[12vw] mx-auto text-center text-primary select-none">Portfolio</h1>
+        <div class="absolute top-[80%] left-[11%] text-xl">
+            <h4 class="text-primary font-bold">Sujoy Paul</h4>
+            <p class="text-lg"><span class="text-primary font-bold">Address:</span> Panchagarh - Bangladesh</p>
+            <b><span class="text-primary">DOB:</span> 13/08/2004</b>
+        </div>
+
+        <div class="absolute top-[80%] right-[11%] text-xl ticket z-[15]">
+            <a href="" class="">
+                <div class="w-[300px] h-[80px] bg-primary flex rounded-md ticketcard relative">
+                    <div class="h-full w-[70%] flex items-center justify-center border-r-2 border-dashed border-white">
+                        <h2 class="text-white text-2xl">Resume</h2>
+                    </div>
+                    <div class="h-full w-[30%] rounded-r-md flex items-center justify-center text-4xl text-white">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
     </header>
 
 
     <script src="./js/theme.js"></script>
+    <script src="https://kit.fontawesome.com/5d73ebcce2.js" crossorigin="anonymous"></script>
 </body>
 </html>
