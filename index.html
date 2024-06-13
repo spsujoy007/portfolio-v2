@@ -19,24 +19,24 @@
     <div class="h-full">
         <div class="sticky top-0 -z-[1]">
             <header class="bg-secondary h-[100vh] w-full relative header">
-                <div class="w-full h-full flex items-end justify-center">
-                    <img class="w-[1100px] z-[1]" src="./assets/3d-cartoon-character.png" alt="">
+                <div class="w-full h-full flex items-end justify-center overflow-hidden">
+                    <img class="md:max-w-[1100px] max-w-[165%] z-[1]" src="./assets/3d-cartoon-character.png" alt="">
                 </div>
-                <h1 class="absolute uppercase top-[28%] w-full text-[12vw] mx-auto text-center text-primary select-none">Portfolio</h1>
-                <div class="absolute top-[80%] left-[11%] text-xl">
+                <h1 class="absolute uppercase top-[10%] md:top-[28%] w-full text-[12vw] mx-auto text-center text-primary select-none">Portfolio</h1>
+                <div class="absolute md:top-[80%] top-[20%] md:left-[11%] left-[10%] text-xl">
                     <h4 class="text-primary font-bold">Sujoy Paul</h4>
                     <p><span class="text-primary font-bold">DOB:</span> 13/08/2004</p>
                     <!-- <p class="text-lg"><span class="text-primary font-bold">Address:</span> Panchagarh - Bangladesh</p>
                     <p><span class="text-primary font-bold">Phone:</span> +8801859342364</p> -->
                 </div>
         
-                <div class="absolute top-[80%] right-[11%] text-xl ticket z-[2]">
+                <div class="absolute top-[80%] right-[11%] text-xl ticket z-[2] md:block hidden">
                         <div class="w-[280px] h-[80px] bg-primary flex rounded-md ticketcard relative">
                             <div class="h-full w-[70%] flex items-center justify-center border-r-2 border-dashed border-white">
                                 <h2 class="text-white text-2xl">PORTFOLIO</h2>
                             </div>
                             <div class="h-full w-[30%] rounded-r-md flex items-center justify-center text-3xl text-white">
-                                <i class="fa-solid fa-server"></i>
+                            <i class="fa-solid fa-server"></i>
                     </a>
                 </div>
             </header>
@@ -44,10 +44,10 @@
 
         <main class="z-[11] w-full min-h-[100vh] ">
             <!-- about page  -->
-            <section class=" min-h-[100vh] sticky top-0 -z-[1] bg-blackston">
+            <section class=" min-h-[100vh] sticky top-0 -z-[1] bg-blackston p-5 md:p-0">
                 <div class="container">
 
-                    <h1 class="text-[12vw] text-neutral">\About ‣</h1>
+                    <h1 class="text-[12vw] text-neutral m-0 p-0"><span class="text-primary">\</span>About <span class="text-primary">‣</span></h1>
                     <div class="md:w-[83%] mx-auto">
                         <p class=" text-neutral">
                             Developing software for the world of intent is something I'm passionate about and I'm dedicated to making the world of intent easy and affordable for everyone. Developing software for the world of intent is something I'm passionate about and I'm dedicated to making the world of intent easy and affordable for everyone.
@@ -56,7 +56,7 @@
                         <p class="text-neutral mt-3 italic">Sujoy Paul</p>
                         <div class="mt-8">
                             <h3 class="text-secondary text-2xl border-b-2 border-secondary pb-2 mb-2 inline-block">Personal Information</h3>
-                            <div class="text-neutral text-xl flex gap-10">
+                            <div class="text-neutral text-xl flex md:flex-row flex-col gap-10">
                                 <div>
                                     <p class="uppercase mb-1"><span class="text-neutral font-bold ">Name:</span> Sujoy Paul</p>
                                     <p class="uppercase mb-1"><span class="text-neutral font-bold ">Address:</span> Panchagarh, Bangladesh</p>
@@ -87,47 +87,89 @@
                 </div>
             </section>
 
-            <section class="bg-white min-h-[100vh] z-[12]">
+            <section class="bg-white min-h-[100vh] z-[12] ">
                 <div class="container">
-                    <div class="relative">
-                        <img class="w-[40%] -mb-[74px] absolute bottom-0 right-0" src="./assets/rocket.png" alt="">
+                    <div class="relative mt-[400px]">
+                        <img class="md:w-[40%] w-full md:-mb-[74px] -mb-[49px] absolute bottom-0 right-0" src="./assets/rocket.png" alt="">
                     </div>
-                    <h1 class="text-[12vw] text-blackston m-0 p-0">\Skills ‣</h1>
-                    <div class="md:w-[83%] mx-auto">
-                        <div class="grid grid-cols-2 gap-2">
-                            <div class="p-5 rounded-lg border-[1px] border-black ">
+                   <div class="p-2 md:p-0">
+                    <h1 class="text-[12vw] text-blackston m-0 p-0"><span class="text-primary">\</span>Skills <span class="text-primary">‣</span></h1>
+                    <div class="md:w-[83%] mx-auto ">
+                        <div class="grid md:grid-cols-2 grid-cols-1 gap-3 p-2">
+                            <div class="p-5 rounded-lg border-[1px] border-neutral w-full">
                                 <h3 class="text-2xl font-bold">Languages</h3>
-                                <div class="flex gap-2 text-xl items-center">
-                                    <p class="text-5xl">‣</p>
-                                    <p>C</p>
-                                    <p>|</p>
-                                    <p>C++</p>
-                                    <p>|</p>
-                                    <p>JavaScript</p>
-                                    <p>|</p>
-                                    <p>Python</p>
-                                    <p>|</p>
-                                    <p>SQL</p>
+                                <div class="flex flex-wrap gap-x-2 text-xl items-center">
+                                    <p class="text-5xl text-primary">‣</p>
+                                    <p class="text-primary">C</p>
+                                    <p>-</p>
+                                    <p class="text-primary">C++</p>
+                                    <p>-</p>
+                                    <p class="text-primary">JavaScript</p>
+                                    <p>-</p>
+                                    <p class="text-primary">Python</p>
+                                    <p>-</p>
+                                    <p class="text-primary">SQL</p>
                                 </div>
                             </div>
                             
-                            <div class="p-5 rounded-lg border-[1px] border-black ">
-                                <h3 class="text-2xl font-bold">Languages</h3>
-                                <div class="flex gap-2 text-xl items-center">
+                            <div class="p-5 rounded-lg border-[1px] border-neutral ">
+                                <h3 class="text-2xl font-bold">Databases</h3>
+                                <div class="flex flex-wrap md:flex-nowrap gap-x-2 text-xl items-center">
                                     <p class="text-5xl">‣</p>
-                                    <p>C</p>
-                                    <p>|</p>
-                                    <p>C++</p>
-                                    <p>|</p>
-                                    <p>JavaScript</p>
-                                    <p>|</p>
-                                    <p>Python</p>
-                                    <p>|</p>
-                                    <p>SQL</p>
+                                    <p>MongoDB</p>
+                                    <p>-</p>
+                                    <p>MySQL</p>
+                                </div>
+                            </div>
+
+                            <div class="p-5 rounded-lg border-[1px] border-neutral ">
+                                <h3 class="text-2xl font-bold">Frameworks</h3>
+                                <div class="flex flex-wrap gap-x-2 text-xl items-center">
+                                    <p class="text-5xl">‣</p>
+                                    <p>React JS</p>
+                                    <p>-</p>
+                                    <p>Next JS</p>
+                                    <p>-</p>
+                                    <p>Django</p>
+                                    <p>-</p>
+                                    <p>Tailwind</p>
+                                    <p>-</p>
+                                    <p>Bootstrap</p>
+                                    <p>-</p>
+                                    <p>Metarial UI</p>
+                                </div>
+                            </div>
+
+                            <div class="p-5 rounded-lg border-[1px] border-neutral ">
+                                <h3 class="text-2xl font-bold">Server side</h3>
+                                <div class="flex flex-wrap gap-x-2 text-xl items-center">
+                                    <p class="text-5xl">‣</p>
+                                    <p>Node JS</p>
+                                    <p>-</p>
+                                    <p>Express JS</p>
+                                </div>
+                            </div>
+
+                            <div class="p-5 rounded-lg border-[1px] border-neutral ">
+                                <h3 class="text-2xl font-bold">Tools and others</h3>
+                                <div class="flex flex-wrap gap-x-2 text-xl items-center">
+                                    <p class="text-5xl">‣</p>
+                                    <p>Git</p>
+                                    <p>-</p>
+                                    <p>Github</p>
+                                    <p>-</p>
+                                    <p>Firebase</p>
+                                    <p>-</p>
+                                    <p>Vercel</p>
+                                    <p>-</p>
+                                    <p>VS Code</p>
+                                    <p>-</p>
+                                    <p>SASS</p>
                                 </div>
                             </div>
                     </div>
                     </div>
+                   </div>
                 </div>
             </section>
 
