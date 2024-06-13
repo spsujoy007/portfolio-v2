@@ -14,9 +14,9 @@ fetch('https://developer-portfolio-server.vercel.app/projects')
                     </div>
                 </div>
             </div>
-            <div class="bg-white absolute right-3 top-3 text-2xl text-blackston px-2 flex items-center gap-3 rounded-full border-[1px] border-primary">
-                <a title="Code link" href="${p.codelink}" class="text-primary" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a title="Live link" href="${p.demolink}" class="text-primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+            <div class="bg-white absolute right-3 top-3 text-2xl text-blackston px-2 flex items-center gap-3 rounded-full border-[1px] border-blackston">
+                <a title="Code link" href="${p.codelink}" class="text-blackston" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a title="Live link" href="${p.demolink}" class="text-blackston" target="_blank"><i class="fa-solid fa-link"></i></a>
             </div>
         </div>
         `)
